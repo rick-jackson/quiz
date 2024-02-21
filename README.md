@@ -1,8 +1,36 @@
-# React + Vite
+тестове завдання для компанії HolyWater.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Переглянути додаток (Деплой)](https://papaya-puppy-61c2b2.netlify.app/)
 
-Currently, two official plugins are available:
+## Quiz:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Користувач додатку має змогу обрати зручну для себе мову на початку проходження вікторини, відповісти на запитання та ввести свій email. Після завершення вікторини, є можливість завантажити csv файл з відповідями та перепройти квіз.
+
+## Інструкція для клонування репозиторію та запуску проекту на локальному сервері:
+
+1. Склонуйте репозиторій на свій комп'ютер:
+
+   ```bash
+   git clone https://github.com/rick-jackson/quiz.git
+   ```
+2. Перейдіть в папку проекту:
+   ```bash
+   cd quiz
+   ```
+3. Встановіть необхідні залежності:
+   ```bash
+   npm install
+   ```
+4. Запустіть проект на локальному сервері:
+   ```bash
+   npm run dev
+   ```
+5. Перейдіть за посиланням:
+   ```bash
+   http://localhost:5174
+   ```
+
+## Використані технології:
+
+- [React](https://reactjs.org/)
+- [Styled Components](https://styled-components.com/)
