@@ -32,12 +32,14 @@ const Email = () => {
     setIsValid(validateEmail(newEmail));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    localStorage.setItem("email", email);
-    (async () => {
+    try {
       await quizGateways.save(email, JSON.parse(localStorage.getItem("quiz")));
-    })();
+    } catch (error) {
+      console.log(error.message);
+    }
+    localStorage.setItem("email", email);
     navigateTo("/thank-you");
   };
 
