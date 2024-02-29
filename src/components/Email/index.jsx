@@ -8,6 +8,7 @@ import TextField from "../UI/TextField";
 import { localization } from "../../common/data/localization";
 import { validateEmail } from "../../common/utils/validateEmail";
 import { getAnswers } from "../../common/utils/localStorage";
+import * as quizGateways from "../../gateways/quiz";
 
 import * as Styled from "./Email.styled";
 
@@ -34,6 +35,9 @@ const Email = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     localStorage.setItem("email", email);
+    (async () => {
+      await quizGateways.save(email, JSON.parse(localStorage.getItem("quiz")));
+    })();
     navigateTo("/thank-you");
   };
 
