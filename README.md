@@ -1,6 +1,6 @@
 тестове завдання для компанії HolyWater.
 
-[Переглянути додаток (Деплой)](https://papaya-puppy-61c2b2.netlify.app/)
+[Переглянути додаток (Деплой)](https://gorgeous-brioche-a5f27b.netlify.app/)
 
 ## Quiz:
 
