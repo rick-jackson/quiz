@@ -10,6 +10,7 @@ import { validateEmail } from "../../common/utils/validateEmail";
 import { getAnswers } from "../../common/utils/localStorage";
 import * as quizGateways from "../../gateways/quiz";
 
+
 import * as Styled from "./Email.styled";
 
 const Email = () => {
